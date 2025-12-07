@@ -87,23 +87,33 @@ function App() {
             
             {/* Folder Structure Info */}
             <div className="px-3 mt-6">
-              <div className="bg-slate-800/50 rounded-lg p-3 border border-slate-700">
-                <p className="text-xs font-semibold text-slate-400 mb-2">Project Structure</p>
-                <div className="text-xs text-slate-500 font-mono space-y-1">
-                  <p>src/concepts/</p>
-                  <p className="pl-2">├── 01-introduction/</p>
-                  <p className="pl-2">├── 02-vector-definition/</p>
-                  <p className="pl-2">├── ...</p>
-                  <p className="pl-2">└── 13-bloch-sphere/</p>
-                </div>
-                <p className="text-xs text-slate-500 mt-2">
-                  Each folder contains:
+              <div className="bg-indigo-900/30 rounded-lg p-3 border border-indigo-700/50">
+                <p className="text-xs font-semibold text-indigo-300 mb-2">Code Organization</p>
+                <p className="text-xs text-slate-400 mb-2">
+                  Each concept has its own folder with 3 files:
                 </p>
-                <ul className="text-xs text-slate-500 list-disc pl-4 mt-1">
-                  <li>Visualization.tsx (3D)</li>
-                  <li>index.tsx (content)</li>
-                  <li>python-example.ts</li>
-                </ul>
+                <div className="text-xs text-slate-300 font-mono bg-slate-900/50 p-2 rounded space-y-1">
+                  <p className="text-indigo-400">src/concepts/</p>
+                  <p className="pl-2">01-introduction/</p>
+                  <p className="pl-2">02-vector-definition/</p>
+                  <p className="pl-2">03-vector-addition/</p>
+                  <p className="pl-2">04-scalar-multiplication/</p>
+                  <p className="pl-2">05-inner-product/</p>
+                  <p className="pl-2">06-norm/</p>
+                  <p className="pl-2">07-basis-vectors/</p>
+                  <p className="pl-2">08-orthogonality/</p>
+                  <p className="pl-2">09-linear-independence/</p>
+                  <p className="pl-2">10-multi-qubit/</p>
+                  <p className="pl-2">11-quantum-gates/</p>
+                  <p className="pl-2">12-outer-product/</p>
+                  <p className="pl-2">13-bloch-sphere/</p>
+                </div>
+                <div className="mt-2 text-xs text-slate-400">
+                  <p className="font-semibold text-slate-300 mb-1">Inside each folder:</p>
+                  <p><span className="text-green-400">Visualization.tsx</span> - 3D graphics</p>
+                  <p><span className="text-blue-400">index.tsx</span> - Educational content</p>
+                  <p><span className="text-amber-400">python-example.ts</span> - Code examples</p>
+                </div>
               </div>
             </div>
           </ScrollArea>
